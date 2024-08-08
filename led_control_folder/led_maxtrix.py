@@ -112,61 +112,61 @@ class LedMatrix:
         self.maxAll(max7219_reg_intensity, intensity & intensity)
         print('Done')
 
-    def all_on(self):
+    def all_on(self, event):
         x = [
             [0, 1, 1, 1, 1, 1, 1, 1],
             [0, 1, 1, 1, 1, 1, 1, 1]
         ]
         self.draw_matrix(x)
 
-    def all_off(self):
+    def all_off(self, event):
         self.clear()
 
 
 
-    def exhaustLightsMatrix(self):
+    def exhaustLightsMatrix(self, event):
         x = [
             [0, 1, 0, 0, 0, 0, 0, 0],
             [0, 1, 0, 0, 0, 0, 0, 0]
         ]
         self.draw_matrix(x)
     #--------------------------------------
-    def BothRearLightsMatrix(self):
+    def BothRearLightsMatrix(self, event):
         x = [
             [0, 0, 1, 1, 0, 0, 0, 0],
             [0, 0, 1, 1, 0, 0, 0, 0]
         ]
         self.draw_matrix(x)
 
-    def RightRearLightsMatrix(self):
+    def RightRearLightsMatrix(self, event):
         x = [
             [0, 0, 1, 0, 0, 0, 0, 0],
             [0, 0, 1, 0, 0, 0, 0, 0]
         ]
         self.draw_matrix(x)
 
-    def LeftRearLightsMatrix(self):
+    def LeftRearLightsMatrix(self, event):
         x = [
             [0, 0, 0, 1, 0, 0, 0, 0],
             [0, 0, 0, 1, 0, 0, 0, 0]
         ]
         self.draw_matrix(x)
     #--------------------------------------
-    def BothFrontLightsMatrix(self):
+    def BothFrontLightsMatrix(self, event):
         x = [
             [0, 0, 0, 0, 1, 1, 0, 0],
             [0, 0, 0, 0, 1, 1, 0, 0]
         ]
         self.draw_matrix(x)
 
-    def RightFrontLightsMatrix(self):
+    def RightFrontLightsMatrix(self, event):
         x = [
             [0, 0, 0, 0, 0, 1, 0, 0],
             [0, 0, 0, 0, 0, 1, 0, 0]
         ]
         self.draw_matrix(x)
 
-    def LeftFrontLightsMatrix(self):
+    def LeftFrontLightsMatrix(self, event):
         x = [
             [0, 0, 0, 0, 1, 0, 0, 0],
             [0, 0, 0, 0, 1, 0, 0, 0]
@@ -175,14 +175,14 @@ class LedMatrix:
 
 
     #--------------------------------------
-    def FogLightsMatrix(self):
+    def FogLightsMatrix(self, event):
         x = [
             [0, 0, 0, 0, 0, 0, 1, 0],
             [0, 0, 0, 0, 0, 0, 1, 0]
         ]
         self.draw_matrix(x)
 
-    def DayTimeLightsMatrix(self):
+    def DayTimeLightsMatrix(self, event):
         x = [
             [0, 0, 0, 0, 0, 0, 0, 1],
             [0, 0, 0, 0, 0, 0, 0, 1]
@@ -190,7 +190,7 @@ class LedMatrix:
         self.draw_matrix(x)
 
     #--------------------------------------
-    def JustFrontAndRearLightsMatrix(self):
+    def JustFrontAndRearLightsMatrix(self, event):
         x = [
             [0, 0, 1, 1, 1, 1, 0, 0],
             [0, 0, 1, 1, 1, 1, 0, 0]
